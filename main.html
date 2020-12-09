@@ -24,15 +24,31 @@
 </style>
 
 <body>
-    <button type="button" id="fetchBtn" class="btn btn-primary"> 
-        Fetch Data 
-    </button>
-    <button type="button" id="logout" class="btn btn-danger"> 
-        Logout 
-    </button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Todo App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="fetchBtn" href="#">Fetch Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="logout" href="#">Logout</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    
 
     <div class="container">
-        <h1>Employee List</h1>
+        <h1>Todo List</h1>
         <table id="table" class="table">
             <tr class="header">
                 <thead class="thead">
